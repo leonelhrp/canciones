@@ -6,7 +6,6 @@
             <img src="./assets/logo.png">
             <h1><v-icon>library_music</v-icon> {{ msg }}</h1>
             <v-date-picker v-model="birthday" :landscape="landscape" :reactive="reactive"></v-date-picker>
-            <input type="date" v-model="nacimiento">
             <br>
             Edad: {{ age }}
           </v-container>
@@ -23,8 +22,7 @@ export default {
       msg: 'Music!',
       birthday: null,
       landscape: true,
-      reactive: false,
-      nacimiento: null
+      reactive: false
     }
   },
 
